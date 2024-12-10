@@ -80,7 +80,7 @@ export default {
           "var(--background-black)"
         );
         document.documentElement.style.setProperty("--primary-text", "#fff");
-        document.documentElement.style.setProperty("--link-color", "#e0e0e0");
+        document.documentElement.style.setProperty("--home-search-input-color", "#1a1a1d");
         document.documentElement.style.setProperty(
           "--nav-border-color",
           "#2a2a2a"
@@ -236,9 +236,6 @@ export default {
   border-top: 1px solid #555;
 }
 
-.mobile-menu a:hover {
-  background-color: #555;
-}
 .mobile-menu-actions {
   display: flex;
   align-items: center;
@@ -280,10 +277,6 @@ export default {
     text-decoration: none;
     padding: 0.5rem 1rem;
     transition: background-color 0.3s;
-  }
-
-  .desktop-menu a:hover {
-    background-color: #555;
   }
 
   .mobile-menu-toggle {
