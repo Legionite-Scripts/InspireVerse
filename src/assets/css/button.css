@@ -1,0 +1,118 @@
+button {
+  border-radius: 4px;
+  padding: 8px 16px;
+  background-color: transparent;
+  cursor: pointer !important;
+  font-size: 16px;
+  border: none;
+  width: fit-content !important;
+  color: var(--primary-text);
+}
+button img {
+  height: 100%;
+}
+
+.btn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.btn > img{
+  height: 1em;
+}
+.btn > * {
+  display: flex;
+  align-items: center;
+}
+
+.btn-primary {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  color: #121212;
+}
+.btn-primary-round {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 6px 8px;
+  color: #000000;
+  border-radius: 50px;
+}
+
+.btn-google {
+  background: transparent;
+  border: 1px solid #68686b;
+  color: var(--primary);
+}
+
+.btn-secondary {
+  background-color: #000000;
+  border: 1px solid #000000;
+  color: white;
+}
+.btn-secondary-round {
+  background-color: #000000;
+  border: 1px solid #000000;
+  color: white;
+  border-radius: 50px;
+}
+.btn-success {
+  background-color: #118911;
+  color: #ffffff;
+}
+.btn-gray {
+  background-color: #f1f0f1;
+  color: var(--primary);
+}
+.btn-outlne {
+  background-color: transparent;
+  border: 1px solid #00000028;
+  color: #000000;
+}
+
+.btn-error {
+  background-color: #ff0b0b;
+  border: 1px solid #ff0b0b;
+  color: white;
+}
+
+.btn:disabled {
+  background-color: #0056b3;
+  cursor: not-allowed;
+}
+
+/* .btn:hover:not(:disabled) {
+  background-color: #0056b3;
+} */
+
+.btn .spinner {
+  display: none;
+  position: absolute;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #007bff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+}
+
+.btn:disabled .spinner {
+  display: block;
+}
+button.filter {
+  border: 1px solid #e1e0e1;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
