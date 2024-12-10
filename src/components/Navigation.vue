@@ -46,10 +46,10 @@
 
     <!-- Mobile Menu Dropdown -->
     <main class="mobile-menu" :class="{ 'is-open': isMobileMenuOpen }">
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/services">Services</a>
-      <a href="/contact">Contact</a>
+      <a href="/">Character Search</a>
+      <a href="/about">Daily Verse</a>
+      <a href="/services">Guidance by Topic</a>
+      <a href="/contact">Support Us</a>
     </main>
   </nav>
 </template>
